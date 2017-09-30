@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootPane" prefHeight="500.0" prefWidth="900.0" stylesheets="@paginaInicio.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.InicioController">
+   <children>
+      <GridPane id="gridpane" hgap="5.0" prefHeight="241.0" prefWidth="900.0" vgap="5.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="tfBuscar" minWidth="-Infinity" prefHeight="27.0" prefWidth="441.0" GridPane.rowIndex="2" />
+            <Button fx:id="botonBuscar" mnemonicParsing="false" onAction="#loadResultado" prefHeight="27.0" prefWidth="116.0" text="Buscar" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Button id="Tendencia" fx:id="Tendencia" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="93.0" prefWidth="297.0" text="Tendencia" GridPane.rowIndex="4" />
+            <Button id="Catalogo" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="93.0" prefWidth="296.0" text="Catalago" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Button id="ComoBuscar" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="93.0" prefWidth="292.0" text="Como Buscar" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <ToggleButton id="simple" fx:id="botonBusquedaSimple" alignment="BOTTOM_CENTER" mnemonicParsing="false" onAction="#loadBusquedaSimple" prefHeight="31.0" prefWidth="141.0" text="Busqueda Simple" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <ToggleButton fx:id="botonBusquedaAvanzada" alignment="BOTTOM_CENTER" mnemonicParsing="false" onAction="#loadBusquedaAvanzada" prefHeight="31.0" prefWidth="141.0" text="Busqueda Avanzada" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+            <ImageView fitHeight="46.0" fitWidth="299.0" GridPane.hgrow="NEVER" GridPane.vgrow="NEVER">
+               <image>
+                  <Image url="@logobiblioteca.jpeg" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <Button fx:id="loadIniciar" mnemonicParsing="false" prefHeight="27.0" prefWidth="116.0" text="Iniciar Sesión" GridPane.columnIndex="4" />
+            <Button id="botonRegistra" fx:id="botonRegistrarse" mnemonicParsing="false" onAction="#loadRegistrarse" prefHeight="27.0" prefWidth="116.0" text="Registrarse" GridPane.columnIndex="5" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </GridPane>
+      <Separator layoutY="241.0" prefHeight="16.0" prefWidth="900.0" />
+      <Pane layoutX="6.0" layoutY="245.0" prefHeight="251.0" prefWidth="889.0">
+         <children>
+            <Text layoutX="60.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Infomación Biblioteca asdfasdfasdfsdf" wrappingWidth="130.45936822891235" />
+            <Text layoutX="395.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ayuda" wrappingWidth="87.00001466274261">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="633.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contacto">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+         </children></Pane>
+   </children>
+</AnchorPane>

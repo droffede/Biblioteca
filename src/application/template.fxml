@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <GridPane hgap="10.0" prefHeight="241.0" prefWidth="900.0" vgap="10.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="botonIniciar" layoutX="465.0" layoutY="98.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="116.0" text="Iniciar Sesión" GridPane.columnIndex="4" />
+            <Button fx:id="botonRegistrarse" layoutX="615.0" layoutY="17.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="116.0" text="Registrarse" GridPane.columnIndex="5" />
+            <Text fill="#b50e0e" strokeType="OUTSIDE" strokeWidth="0.0" text="Biblioteca Shalala" wrappingWidth="252.78923797607422">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Text>
+            <Button fx:id="botonInicio" mnemonicParsing="false" prefHeight="27.0" prefWidth="53.0" text="Inicio" GridPane.columnIndex="3">
+               <GridPane.margin>
+                  <Insets left="49.0" />
+               </GridPane.margin>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </GridPane>
+      <Separator layoutY="241.0" prefHeight="16.0" prefWidth="900.0" />
+      <Pane layoutX="5.0" layoutY="249.0" prefHeight="247.0" prefWidth="889.0">
+         <children>
+            <Text layoutX="74.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Infomación Biblioteca asdfasdfasdfsdf" wrappingWidth="130.45936822891235" />
+            <Text layoutX="526.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ayuda" wrappingWidth="87.00001466274261">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="658.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contacto">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+         </children></Pane>
+   </children>
+</AnchorPane>

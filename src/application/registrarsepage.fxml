@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane fx:id="rootPane" prefHeight="500.0" prefWidth="900.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="application.registrarseController">
+   <children>
+      <Pane id="gridpane" prefHeight="272.0" prefWidth="903.0" stylesheets="@paginaInicio.css">
+         <children>
+            <ImageView fitHeight="53.0" fitWidth="300.0" layoutX="-15.0" layoutY="1.0">
+               <image>
+                  <Image url="@logobiblioteca.jpeg" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <Text layoutX="46.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Correo:" wrappingWidth="53.1650390625">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <TextField layoutX="115.0" layoutY="96.0" />
+            <Text layoutX="34.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre:" wrappingWidth="69.1650390625">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <TextField layoutX="115.0" layoutY="137.0" />
+            <Text layoutX="35.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apellido:" wrappingWidth="69.1650390625">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <TextField layoutX="115.0" layoutY="178.0" />
+            <Text layoutX="16.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contraseña:" wrappingWidth="76.098388671875">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <TextField layoutX="115.0" layoutY="215.0" />
+            <Button fx:id="botonInicio" layoutX="629.0" layoutY="14.0" mnemonicParsing="false" onAction="#loadInicio" prefHeight="30.0" prefWidth="73.0" text="Inicio" />
+            <Button fx:id="botonIniciar" layoutX="742.0" layoutY="16.0" mnemonicParsing="false" onAction="#loadIniciar" prefHeight="27.0" prefWidth="116.0" text="Iniciar Sesión" />
+         </children>
+      </Pane>
+      <Text layoutX="69.0" layoutY="401.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Infomación Biblioteca asdfasdfasdfsdf" wrappingWidth="130.45936822891235" />
+      <Text layoutX="536.0" layoutY="410.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ayuda" wrappingWidth="87.00001466274261">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="724.0" layoutY="410.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contacto">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Button layoutX="150.0" layoutY="265.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="82.0" text="Registrarse" />
+   </children>
+</AnchorPane>

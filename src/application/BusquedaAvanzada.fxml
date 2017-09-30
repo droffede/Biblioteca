@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="rootPane" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.BusquedaAvanzadaController">
+   <children>
+      <TitledPane id="titlePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0">
+         <content>
+            <Pane id="pane" prefHeight="382.0" prefWidth="898.0" style="-fx-background-color: linear-gradient(rgb(0,64,128), rgb(255,255,255));">
+               <children>
+                  <Label id="lblAutor" layoutX="69.0" layoutY="134.0" style="-fx-font-size: 20;" text="Autor" />
+                  <Label id="lblAnioInit" layoutX="34.0" layoutY="170.0" style="-fx-font-size: 20;" text="Año inicial" />
+                  <Label id="lblIdioma" layoutX="59.0" layoutY="217.0" style="-fx-font-size: 20;" text="Idioma" />
+                  <Label id="anioFin" layoutX="350.0" layoutY="173.0" style="-fx-font-size: 20;" text="Año final" />
+                  <Label id="lblCategoria" layoutX="28.0" layoutY="93.0" style="-fx-font-size: 20;" text="Categoria" />
+                  <Label id="lblWordClave" layoutX="30.0" layoutY="266.0" style="-fx-font-size: 20;" text="Palabra Clave / Título" />
+                  <TextField id="autorField" layoutX="159.0" layoutY="136.0" />
+                  <TextField id="anioFieldIn" layoutX="159.0" layoutY="175.0" />
+                  <TextField id="anioFieldOut" layoutX="473.0" layoutY="173.0" />
+                  <TextField fx:id="tfBuscar" layoutX="33.0" layoutY="321.0" prefHeight="25.0" prefWidth="247.0" />
+                  <ChoiceBox id="choiceCategoria" layoutX="159.0" layoutY="97.0" prefWidth="150.0" />
+                  <ChoiceBox id="choiceIdioma" layoutX="158.0" layoutY="220.0" prefWidth="150.0" />
+                  <Button id="btnBuscar" fx:id="botonBuscar" layoutX="314.0" layoutY="316.0" mnemonicParsing="false" onAction="#loadResultado" style="-fx-font-size: 16;" text="Buscar" />
+                  <ImageView id="imageBiblio" fitHeight="61.0" fitWidth="300.0" layoutX="-14.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@logobiblioteca.jpeg" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="botonInicio" layoutX="532.0" layoutY="12.0" mnemonicParsing="false" onAction="#loadInicio" text="Inicio">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="loadIniciar" layoutX="618.0" layoutY="15.0" mnemonicParsing="false" onAction="#loadIniciar" prefHeight="27.0" prefWidth="116.0" text="Iniciar Sesión" />
+                  <Button id="botonRegistra" fx:id="botonRegistrarse" layoutX="764.0" layoutY="13.0" mnemonicParsing="false" onAction="#loadRegistrarse" prefHeight="27.0" prefWidth="116.0" text="Registrarse" />
+               </children>
+            </Pane>
+         </content>
+      </TitledPane>
+   </children>
+</AnchorPane>

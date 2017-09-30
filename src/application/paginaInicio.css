@@ -1,0 +1,31 @@
+#Tendencia {
+	-fx-background-color: linear-gradient(rgb(103,147,220), rgb(255,255,255));
+	-fx-font-weight:bold;
+	-fx-border-color: rgb(0,64,128);
+ }
+
+#Catalogo{
+	-fx-background-color: linear-gradient(rgb(103,147,220), rgb(255,255,255));
+	-fx-font-weight:bold;
+	-fx-border-color: rgb(0,64,128);
+}
+
+#ComoBuscar {
+	-fx-background-color: linear-gradient(rgb(103,147,220), rgb(255,255,255));
+	-fx-font-weight:bold;
+	-fx-border-color: rgb(0,64,128);
+}
+
+#gridpane {
+	-fx-background-color: linear-gradient(rgb(0,64,128), rgb(255,255,255));
+}
+
+#sesion {
+	-fx-text-fill: rgb(255,255,255);
+	-fx-font-weight: bold;
+}
+
+#registrarse{
+	-fx-text-fill: rgb(255,255,255);
+	-fx-font-weight: bold;
+}

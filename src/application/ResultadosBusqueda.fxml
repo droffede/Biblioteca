@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootPane" prefHeight="500.0" prefWidth="900.0" stylesheets="@paginaInicio.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ResultadosBusquedaController">
+   <children>
+      <GridPane id="gridpane" hgap="10.0" layoutX="-5.0" prefHeight="272.0" prefWidth="907.0" stylesheets="@paginaInicio.css" vgap="10.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="27.0" minHeight="3.933328628540039" prefHeight="17.26666259765625" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="23.06667137145996" minHeight="0.0" prefHeight="9.73333740234375" vgrow="ALWAYS" />
+            <RowConstraints maxHeight="23.06667137145996" minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="botonIniciar" layoutX="465.0" layoutY="98.0" mnemonicParsing="false" onAction="#loadIniciar" prefHeight="27.0" prefWidth="116.0" text="Iniciar Sesión" GridPane.columnIndex="4">
+               <GridPane.margin>
+                  <Insets top="10.0" />
+               </GridPane.margin></Button>
+            <Button fx:id="botonRegistrarse" layoutX="615.0" layoutY="17.0" mnemonicParsing="false" onAction="#loadRegistrarse" prefHeight="27.0" prefWidth="116.0" text="Registrarse" GridPane.columnIndex="5">
+               <GridPane.margin>
+                  <Insets top="10.0" />
+               </GridPane.margin></Button>
+            <Button fx:id="botonInicio" mnemonicParsing="false" onAction="#loadInicio" prefHeight="27.0" prefWidth="53.0" text="Inicio" GridPane.columnIndex="3">
+               <GridPane.margin>
+                  <Insets left="49.0" top="10.0" />
+               </GridPane.margin>
+            </Button>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ordenar por:" wrappingWidth="96.27005767822266" GridPane.rowIndex="2">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets top="15.0" />
+               </GridPane.margin>
+            </Text>
+            <CheckBox fx:id="checkTitulo" mnemonicParsing="false" text="Titulo A-Z" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets top="15.0" />
+               </GridPane.margin>
+            </CheckBox>
+            <CheckBox fx:id="checkAutor" mnemonicParsing="false" text="Autor A-Z" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets top="15.0" />
+               </GridPane.margin>
+            </CheckBox>
+            <CheckBox fx:id="checkAño" mnemonicParsing="false" text="Año" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets top="15.0" />
+               </GridPane.margin>
+            </CheckBox>
+            <ImageView fitHeight="49.0" fitWidth="299.0">
+               <image>
+                  <Image url="@logobiblioteca.jpeg" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </GridPane>
+      <Pane layoutX="13.0" layoutY="386.0" prefHeight="99.0" prefWidth="889.0">
+         <children>
+            <Text layoutX="77.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Infomación Biblioteca asdfasdfasdfsdf" wrappingWidth="130.45936822891235" />
+            <Text layoutX="518.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ayuda" wrappingWidth="87.00001466274261">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="661.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contacto">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Separator layoutX="24.0" layoutY="-6.0" prefHeight="16.0" prefWidth="829.0" />
+         </children></Pane>
+      <Pane layoutX="13.0" layoutY="112.0" prefHeight="285.0" prefWidth="786.0">
+         <children>
+            <TableView fx:id="tablaBusqueda" layoutX="3.0" layoutY="-1.0" prefHeight="285.0" prefWidth="775.0">
+              <columns>
+                <TableColumn fx:id="columnaTitulo" prefWidth="234.933349609375" text="Titulo" />
+                <TableColumn fx:id="columnaAutor" prefWidth="212.066650390625" text="Autor" />
+                  <TableColumn fx:id="columnaAño" prefWidth="186.2000732421875" text="Año" />
+                  <TableColumn fx:id="columnaPortada" prefWidth="132.0666961669922" text="Portada" />
+              </columns>
+            </TableView>
+            <ScrollBar layoutX="760.0" layoutY="2.0" orientation="VERTICAL" prefHeight="280.0" prefWidth="19.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
